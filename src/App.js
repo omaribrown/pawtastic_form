@@ -29,7 +29,48 @@ class App extends React.Component {
 
         <div className='right-div'>
           <h2>Schedule a Consultation for Your Pup</h2>
-          
+          <form className='pup-form'>
+            <label>Name</label>
+            <input 
+              type='name'
+              placeholder='Ace'
+              value={this.state.name}
+            />
+            <label>Age</label>
+            <input 
+              type='number'
+              // placeholder='Golden Retriever'
+              value={this.state.age}
+            />
+            <label>Color</label>
+            <input 
+              type='text'
+              placeholder='Black with white spots'
+              value={this.state.color}
+            />
+            <label>Breed</label>
+            <input 
+              type='text'
+              placeholder='Golden Retriever'
+              value={this.state.breed}
+            />
+            <label>Weight</label>
+            <input 
+              type='name'
+              placeholder='Rough estimate in lbs'
+              value={this.state.weight}
+            />
+            <label>Gender</label>
+            <input 
+              type='text'
+              placeholder='Male'
+              value={this.state.gender}
+            />
+            <button
+              type='submit'
+              >Submit</button>
+
+          </form>
         </div>
       </div>
     );
