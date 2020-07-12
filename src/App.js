@@ -16,7 +16,13 @@ class App extends React.Component {
     }
   }
 
-
+  submitForm = (event) => {
+    event.preventDefault()
+    this.setState({
+      formComplete: true
+    })
+    alert("Your form has been submitted! We will reach out to you shortly to schedule a consultation.")
+  }
   render() {
     return (
       <div className="App">
@@ -68,6 +74,7 @@ class App extends React.Component {
             />
             <button
               type='submit'
+              onClick={this.submitForm}
               >Submit</button>
 
           </form>
