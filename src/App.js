@@ -1,18 +1,29 @@
 import React from 'react';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <div className='left-div'>
+class App extends React.Component {
+  constructor() {
+    super()
 
-      </div>
+    this.state = {
+      name: '',
+      age: '',
+      color: '',
+      breed: '',
+      gender: '',
+      weight: '',
+      formComplete: false
+    }
+  }
 
-      <div className='right-div'>
+
+  render() {
+    return (
+      <div className="App">
         
       </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default App;
