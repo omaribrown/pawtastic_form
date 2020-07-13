@@ -16,13 +16,47 @@ class App extends React.Component {
     }
   }
 
+  onNameChange = (event) => {
+    this.setState({
+      name: event.target.value
+    })
+  }
+  
+  onAgeChange = (event) => {
+    this.setState({
+      age: event.target.value
+    })
+  }
+  onColorChange = (event) => {
+    this.setState({
+      color: event.target.value
+    })
+  }
+  
+  onBreedChange = (event) => {
+    this.setState({
+      breed: event.target.value
+    })
+  }
+  onGenderChange = (event) => {
+    this.setState({
+      Gender: event.target.value
+    })
+  }
+  
+  onWeightChange = (event) => {
+    this.setState({
+      weight: event.target.value
+    })
+  }
   submitForm = (event) => {
     event.preventDefault()
     this.setState({
       formComplete: true
     })
-    alert("Your form has been submitted! We will reach out to you shortly to schedule a consultation.")
+    alert(`Your form has been submitted! We will reach out to you shortly to schedule a consultation for ${this.state.name}!`)
   }
+
   render() {
     return (
       <div className="App">
@@ -41,12 +75,13 @@ class App extends React.Component {
               type='name'
               placeholder='Ace'
               value={this.state.name}
+              onChange={this.onNameChange}
             />
             <label>Age</label>
             <input 
               type='number'
-              // placeholder='Golden Retriever'
               value={this.state.age}
+              onChange=
             />
             <label>Color</label>
             <input 
