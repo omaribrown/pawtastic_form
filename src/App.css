@@ -1,7 +1,7 @@
-/* .container {
-  /* background-image: url(./assets/background.png);
-  background-size: contain; */
 
+* {
+  background-color: beige;
+}
 
 .App {
   display: grid;
@@ -12,6 +12,7 @@
 .left-div {
   /* background: image(); */
   text-align: center;
+  padding: 2em;
 }
 
 .right-div {
