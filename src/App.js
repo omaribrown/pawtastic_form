@@ -40,7 +40,7 @@ class App extends React.Component {
   }
   onGenderChange = (event) => {
     this.setState({
-      Gender: event.target.value
+      gender: event.target.value
     })
   }
   
@@ -81,31 +81,37 @@ class App extends React.Component {
             <input 
               type='number'
               value={this.state.age}
-              onChange=
+              onChange={this.onAgeChange}
             />
             <label>Color</label>
             <input 
               type='text'
               placeholder='Black with white spots'
               value={this.state.color}
+              onChange={this.onColorChange}
+
             />
             <label>Breed</label>
             <input 
               type='text'
               placeholder='Golden Retriever'
               value={this.state.breed}
+              onChange={this.onBreedChange}
+
             />
             <label>Weight</label>
             <input 
               type='name'
               placeholder='Rough estimate in lbs'
               value={this.state.weight}
+              onChange={this.onWeightChange}
             />
             <label>Gender</label>
             <input 
               type='text'
               placeholder='Male'
               value={this.state.gender}
+              onChange={this.onGenderChange}
             />
             <button
               type='submit'
