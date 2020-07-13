@@ -34,7 +34,11 @@
 .pup-form > input {
   width: 250px;
   border: 0;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
   border-bottom: 1px solid black;
+  /* box-shadow: 12px, 12px, 2px, 1px black; */
 }
 
 .pup-form > button {
